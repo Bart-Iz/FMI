@@ -69,14 +69,18 @@
     <p>Jest to baza, w której iloczyn skalarny dowolnej pary różnych wektorów tej bazy daje 0 (wszystkie wektory są do siebie prostopadłe).
         <br><bred>\(\vec{v_i}\cdot\vec{v_j}=0\)</bred> gdzie i&ne;j.
         <br> W celu ortogonalizacji bazy można zastosować procedurę <bred>ortogonalizacji Grama-Schmidta</bred>. Robi się w to ten sposób:
-        <ol>Mamy bazę wektorów \(\vec{v_i}\), którą chcemy przekształcić na ortogonalną bazę \(\vec{u_i}\)</ol>
-        <ol>Wybieramy jeden z wektorów v (np. wektor \(\vec{v_1}\)) i trkatujemy go jako pierwszy wektor bazy u (\(\vec{v_1}=\vec{u_1}\)) </ol>
-        <ol>Obliczamy operator rzutu który definiujemy jako \( proj_{\vec{u_i}}\vec{v_j} = \frac{\vec{v_j}\cdot\vec{u_i}}{\vec{u_i}\cdot\vec{u_i}}\vec{u_i}\) czyli po prostu składową wektora \(\vec{v_j}\) w kierunku wektora \(\vec{u_i}\)</ol>
-        <ol>Teraz chcemy aby nasz wektor \(\vec{v_2}\) stał się wektorem \(\vec{u_2}\) prostopadłym do \(\vec{u_1}\). Aby to zrobić obliczmy \( proj_{\vec{u_1}}\vec{v_2}\) czyli składowe 
-            wektora \(\vec{v_2}\) wzdłuż \(\vec{u_1}\). </ol>
-        <ol>Teraz obliczamy \(\vec{u_2}=\vec{v_2} - proj_{\vec{u_1}}\vec{v_2} \) i mamy kolejny wektro bazy. Ale co właściwie zrobiła ta operacja? No więc odejmując rzut od wektora pozbyliśmy się jego składowych równoległych do \(\vec{u_1}\) czyli zostały nam jedynie składowe prostopadłe
-             do tego wektora, a więc i sam wektor jest do niego prostopadły.  </ol>
-        <ol> Dla kolejnych wektorów musimy obliczyć rzuty \(\vec{v_i}\) na wszystkie poprzednie wektory \(\vec{u_j}\) gdzie j&lt;i</ol>
+        <ol>
+            <li>Mamy bazę wektorów \(\vec{v_i}\), którą chcemy przekształcić na ortogonalną bazę \(\vec{u_i}\)</li>
+        <li>Wybieramy jeden z wektorów v (np. wektor \(\vec{v_1}\)) i trkatujemy go jako pierwszy wektor bazy u (\(\vec{v_1}=\vec{u_1}\)) </li>
+        <li>Obliczamy operator rzutu który definiujemy jako \( proj_{\vec{u_i}}\vec{v_j} = \frac{\vec{v_j}\cdot\vec{u_i}}{\vec{u_i}\cdot\vec{u_i}}\vec{u_i}\) czyli po prostu składową wektora 
+            \(\vec{v_j}\) w kierunku wektora \(\vec{u_i}\)</li>
+        <li>Teraz chcemy aby nasz wektor \(\vec{v_2}\) stał się wektorem \(\vec{u_2}\) prostopadłym do \(\vec{u_1}\). Aby to zrobić obliczmy \( proj_{\vec{u_1}}\vec{v_2}\) czyli składowe 
+            wektora \(\vec{v_2}\) wzdłuż \(\vec{u_1}\). </li>
+        <li>Teraz obliczamy \(\vec{u_2}=\vec{v_2} - proj_{\vec{u_1}}\vec{v_2} \) i mamy kolejny wektro bazy. Ale co właściwie zrobiła ta operacja? No więc odejmując rzut 
+            od wektora pozbyliśmy się jego składowych równoległych do \(\vec{u_1}\) czyli zostały nam jedynie składowe prostopadłe
+             do tego wektora, a więc i sam wektor jest do niego prostopadły.  </li>
+        <li> Dla kolejnych wektorów musimy obliczyć rzuty \(\vec{v_i}\) na wszystkie poprzednie wektory \(\vec{u_j}\) gdzie j&lt;i</li>
+        </ol>
     </p>
 
     <h3>Baza ortonormalna</h3>
