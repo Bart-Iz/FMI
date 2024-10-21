@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="'keywrods" content="Fizyka, matematyka, wketroy, baza ortogonalna, baza ortonormalna">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        B{
+            font-weight: bold;
+        }
+        Bred{
+            font-weight: bold;
+            color: red;
+        }
+        .imgwek{
+            max-width:30%; 
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Wektory - przydatne infromacje i właściwości</h1>
+
+    <h2>Czym jest wektor?</h2>
+    <p>Mówiąc w dużym uproszczeniu wektor jest strzałką pomiędzy dwoma punktami (taka jak na obrazku poniżej). Jest to dość szorstka definicja, jednak pozwala nam ona wyrobić sobie pewną intuicję.</p>
+    <p>Dobrze ale w takim razie czemu ta strzałka jest tak często używana w fizycę i matematyce? Wektor przenosi wiele informacji i względnie prosto wykonuje się na
+         nim rózne operacje. Informacje, które przenosi ta nasza strzałka/wektor to:
+        <li><B>Długość</B> - te wielkość możemy rozumieć jako odległość między dwoma punktami i oznaczamy ją jako <Bred>\(|\vec{AB}|\)</Bred>. W fizyce ta długość będzie miała różne znaczenia w zależności od tego 
+            jaką wielkość opisujemy np. w przypadku wektora położenia będzie ona oznaczać odległość od naszego punktu odniesienia do innego punktu w przestrzeni,
+             w przypadku wektora prędkości będzie on oznaczał jak wektor położenia zmienia się w jednostce czasu itd.,</li>
+        <li><B>Kierunek</B> - jest to po prostu kierunek wzdłuż którego leży strzłka. W fizyce wyróżniamy trzy kierunki - pionowy, poziomy oraz ukośny,</li>
+        <li><B>Zwrot</B> -  jest to strona, w którą wskazuje grot strzałki. W praktyce zwrot pozwala nam psotawic znak <Bred>+</Bred> lub <Bred>-</Bred> przed składową wektora.
+             To który ze znanków znajdzie się przed składową zależy od tego czy zwrot jest w tym samym kierunku czy przeciwnym do zdefiniowanych przez nas osi układu.</li>
+    </p>
+    <center><img src="../images/wektor.png" alt="wektor", class="imgwek"></center>
+    <p>Warto również wspomnieć czym jest wersor <Bred>\(\hat{e}\)</Bred> - jest to wektor jednostkowy, czyli taki o długości jeden. Jest przydatny do np. definiowania kierunków
+         osi naszego układu współrzędnych</p>
+    <p>Wspólrżedne wektora \(\vec{AB}\) zaznaczonego na rysunku obliczamy w ten sposób \([x_A-x_B,y_a-y_B]\). Poszczególne składowe tego wektora oznaczają jego rzuty na daną oś,
+         jak również długość wektora składowego wzdłuż osi. Długość wektora obliczamy stosują twierdzenie pitagorasa - wyciągając pierwiastek z sumy kwadratów składowych wektora.
+          Możemy zastosować twierdzenia pitagorasa do policzenia długości wektora, ponieważ osie układu są zdefinowane w taki sposób, że są wzgledem siebie prostopadłe, 
+          a co za tym idzie również składowe wzdłuż nich również. </p>
+    <p>Dodajemy/odejmujemy wektory poprzez dodawanie/odejmowanie od siebie poszczególnych składowych wektorów.</p>
+    
+    <h2>Iloczyn skalarny</h2>
+    <p><B>Iloczyn skalarny</B> definiuemy jako <B>\(\vec{A}\cdot\vec{B}=A_x*B_x + A_y*B_y\)</B> gdzie \(A_i\) oraz \(B_i \) to składowe odpowiednich wektorów, iloczyn
+         skalarny spełnia również zależność <B>\(\vec{A}\cdot\vec{B}= |\vec{A}||\vec{B}|cos(&ang;\vec{A}\vec{B})\)</B> często stosowanym oznaczeniem iloczynu skalarnego jest 
+         również &lt;\(\vec{A},\vec{B}\)&gt;
+        <br> Z drugiej definicji warto zauważyć, że jeżeli wektory są do siebie prostopadłe to iloczyn skalarny daje nam zero, podczas gdy jeśli są do siebie równoległe/antyrównoległe 
+        to iloczyn skalarny jest równy iloczynowi długości poszczególnych wektorów ze znakiem plus/minus. Natomiast jeśli weźmiemy iloczyn skalarny dwóch takich samych wektorów to otrzymamy kwadrat 
+        długości wektora oznaczany <B>||\(\vec{A}\)||</B>.
+        <br> Warto również wspomnieć o dwóch właściwościach iloczynu skalarnego:
+        <li><B>przemienność</B> czyli \(\vec{A}\cdot\vec{B}=\vec{B}\cdot\vec{A}\)  </li>
+        <li><B>rozdzielność</B> czyli \(\vec{A}\cdot(\vec{B}+\vec{C})=\vec{A}\cdot\vec{B}+\vec{A}\cdot\vec{C}\) </li>    
+    </p>
+    <h2>Baza</h2>
+    <p> Baza jest to zbiór wektorów, które są:
+        <li><B>Linowo niezależne</B> - żadnego z wektorów bazy nie da się otrzymać poprzez dowolną kombinację pozostałych wektorów bazy (\(\vec{v_i}\)). Aby sprawdzić czy wektory są liniowo niezależne
+        należy sprawdzić czy równanie \(\sum a_i\vec{v_i}=0\) jest spełnione tlyko wtedy kiedy wszystkie współczynniki \(a_i=0\)   </li>
+        <li><B>Generują całą przestrzeń</B> - oznacza to że dowolną kombinacje liniową wektorów z tej przestrzeni (np.&reals;\(^2\)) można zapisać jako kombinacje wektorów bazy</li>
+    Wymiarem przestrzeni nazywamy liczbę wektorów rozpinających bazę.
+    <br> Bazą kanoniczą nazywamy bazę rozpiętą przez wersory posiadaje tylko jedną składową rózną od zera.
+    </p>
+    Warto wspomnieć o dwóch szczególnych bazach:
+    <h3 id="ort">Baza ortogonalna</h3>
+    <p>Jest to baza, w której iloczyn skalarny dowolnej pary różnych wektorów tej bazy daje 0 (wszystkie wektory są do siebie prostopadłe).
+        <br><bred>\(\vec{v_i}\cdot\vec{v_j}=0\)</bred> gdzie i&ne;j.
+        <br> W celu ortogonalizacji bazy można zastosować procedurę <bred>ortogonalizacji Grama-Schmidta</bred>. Robi się w to ten sposób:
+        <ol>Mamy bazę wektorów \(\vec{v_i}\), którą chcemy przekształcić na ortogonalną bazę \(\vec{u_i}\)</ol>
+        <ol>Wybieramy jeden z wektorów v (np. wektor \(\vec{v_1}\)) i trkatujemy go jako pierwszy wektor bazy u (\(\vec{v_1}=\vec{u_1}\)) </ol>
+        <ol>Obliczamy operator rzutu który definiujemy jako \( proj_{\vec{u_i}}\vec{v_j} = \frac{\vec{v_j}\cdot\vec{u_i}}{\vec{u_i}\cdot\vec{u_i}}\vec{u_i}\) czyli po prostu składową wektora \(\vec{v_j}\) w kierunku wektora \(\vec{u_i}\)</ol>
+        <ol>Teraz chcemy aby nasz wektor \(\vec{v_2}\) stał się wektorem \(\vec{u_2}\) prostopadłym do \(\vec{u_1}\). Aby to zrobić obliczmy \( proj_{\vec{u_1}}\vec{v_2}\) czyli składowe 
+            wektora \(\vec{v_2}\) wzdłuż \(\vec{u_1}\). </ol>
+        <ol>Teraz obliczamy \(\vec{u_2}=\vec{v_2} - proj_{\vec{u_1}}\vec{v_2} \) i mamy kolejny wektro bazy. Ale co właściwie zrobiła ta operacja? No więc odejmując rzut od wektora pozbyliśmy się jego składowych równoległych do \(\vec{u_1}\) czyli zostały nam jedynie składowe prostopadłe
+             do tego wektora, a więc i sam wektor jest do niego prostopadły.  </ol>
+        <ol> Dla kolejnych wektorów musimy obliczyć rzuty \(\vec{v_i}\) na wszystkie poprzednie wektory \(\vec{u_j}\) gdzie j&lt;i</ol>
+    </p>
+
+    <h3>Baza ortonormalna</h3>
+    Jest to baza ortogonalna, w której wszystkie wektory są znormalizowane czyli mają długość 1.
+
+<p><a href="../index.html">Strona główna</a></p>
+</html>
