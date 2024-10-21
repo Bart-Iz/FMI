@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="'keywrods" content="Fizyka, matematyka, odpowiedzi">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        B{
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <p><B>Zadanie 1.</B> Wskaż, które spośród podanych wektorów mają taką samą długość. Unormować wszystkie poniższe wektory:</p>
+    <p>
+    \( \vec{a} = \begin{bmatrix} 2 \\ -3 \end{bmatrix}, \quad \vec{b} = \begin{bmatrix} 1 \\ -2 \\ \sqrt{3} \\ 4 \end{bmatrix}, \quad \vec{c} = \begin{bmatrix} \frac{2}{\sqrt{2}} \\ 0 \\ \frac{1}{2} \end{bmatrix}, \quad \vec{d} = \begin{bmatrix} 1 \\ \frac{1}{\sqrt{2}} \\ 0 \end{bmatrix} \)
+    </p>
+    <p><B>Odpowiedź:</B> Wektory o tej samej długości mają długość \(\frac{3}{2}\). (Podałem długość tych wektorów, ponieważ wskazanie poprawnych wektorów pozowliłoby wam pójść na skróty)</p>
+
+    <p><B>Zadanie 2.</B> Obliczyć długość wektora \( \vec{a} = \begin{bmatrix} 1 \\ 0 \\ \frac{4}{5} \end{bmatrix} \) i wyznaczyć kąty, jakie tworzy on z osiami układu współrzędnych kartezjańskich.</p>
+    <p><B>Odpowiedź:</B> \(|\vec{a}|=\frac{2}{5}\), kąty z odpowiednimi osiami to \(\alpha_{x}=60^\circ\), \(\alpha_{y}=0^\circ\) i \(\alpha_{z}=30^\circ\). Bonusowe pytanie - czemu w odpowiedizach rozważamy tylko kąty z pierwszej ćwiartki, a nie czwartej? </p>
+
+    <p><B>Zadanie 3.</B> Sprawdzić, czy podane wektory są liniowo niezależne:</p>
+    <ul>
+        <li>a) \( \vec{a}_1 = \begin{bmatrix} -12 \\ -16 \end{bmatrix}, \quad \vec{a}_2 = \begin{bmatrix} 2 \\ -1 \end{bmatrix} \)</li>
+        <li>b) \( \vec{b}_1 = \begin{bmatrix} 1 \\ -2 \end{bmatrix}, \quad \vec{b}_2 = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, \quad \vec{b}_3 = \begin{bmatrix} 1 \\ -4 \end{bmatrix}, \quad \vec{b}_4 = \begin{bmatrix} 0 \\ -4 \end{bmatrix} \)</li>
+        <li>c) \( \vec{c}_1 = \begin{bmatrix} -35 \\ -7 \end{bmatrix}, \quad \vec{c}_2 = \begin{bmatrix} 0 \\ 0 \end{bmatrix}, \quad \vec{c}_3 = \begin{bmatrix} 10 \\ 2 \end{bmatrix}, \quad \vec{c}_4 = \begin{bmatrix} 0 \\ 0.2 \end{bmatrix} \)</li>
+    </ul>
+    <p><B>Odpowiedź:</B> a) nie, b) tak i c) nie</p>
+
+    <p><B>Zadanie 4.</B> Stosując metodę Grama-Schmidta zortogonalizować wektory \( \vec{a} = [3, 1] \) i \( \vec{b} = [2, 2] \), tworzące bazę w przestrzeni euklidesowej \( E^2 \).</p>
+    <p><B>Odpowiedź:</B> Ostatecznie wektor b ma postać [\(-\frac{2}{5}, 1\frac{1}{5}\)]. Ortagonalizacja Grama-Schmidta jest wyjaśniona przeze mnie <a href="../podstrony/wektory.html">tutaj</a>.</p>
+
+    <p><B>Zadanie 5.</B> Trójkąt o wierzchołkach ABC jest trójkątem równobocznym. Wiedząc, że \( A = (0, 0) \), \( B = (5\sqrt{2}, 0) \), wyznaczyć współrzędne wierzchołka \( C \). Skorzystaj z rachunku wektorowego.</p>
+    <p><B>Odpowiedź:</B> C=\( (\frac{5\sqrt{2}}{2}, \frac{5\sqrt{6}}{2})\) lub C=\( (\frac{5\sqrt{2}}{2}, -\frac{5\sqrt{6}}{2})\)</p>
+
+    <p><B>Zadanie 6.</B> Stwierdzić, czy wektory \( \vec{a}_1 = [1, 2, 3] \), \( \vec{a}_2 = [3, 2, 1] \) i \( \vec{a}_3 = [2, 3, 1] \) mogą tworzyć bazę w przestrzeni \( R^3 \). Obliczyć:</p>
+    <ul>
+        <li>a) \( \vec{a}_1 + \vec{a}_2 + \vec{a}_3 \)</li>
+        <li>b) \( \vec{a}_1 - \vec{a}_2 + \vec{a}_3 \)</li>
+        <li>c) iloczyny skalarne wszystkich możliwych par podanych wektorów,</li>
+        <li>d) długość wektora \( \vec{a}_4 = \vec{a}_1 + \vec{a}_2 + \vec{a}_3 \).</li>
+    </ul>
+    <p><B>Odpowiedź:</B> Wektory tworzą bazę</p>
+    <li>a)\(\begin{bmatrix} 6 \\ 7 \\ 5 \end{bmatrix}\)</li>
+    <li>b)\(\begin{bmatrix} 0 \\ 3 \\ 3 \end{bmatrix}\)</li>
+    <li>c)jest w sumie 6 różnych kombinacji jednka kombinatoryka daje name ze jest to 3*3=9 opcji. Dlaczego możemy odrzucić 3 rozwiązania? Dokładne wartości iloczynów skalarnych pozostawiam wam do policzenia na własną ręke.</li>
+    <li>d)\(|\vec{a_4}|=\sqrt{110}\)</li>
+
+<a href="../index.html">Strona główna</a>
+</html>
