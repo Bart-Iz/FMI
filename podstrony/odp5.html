@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Matematyka, granice, funkcje, odpowiedzi">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 18px; /* Powiększenie tekstu */
+            line-height: 1.6;
+        }
+        B {
+            font-weight: bold;
+        }
+        .zadanie {
+            margin-bottom: 20px; /* Większy odstęp między zadaniami */
+        }
+        li {
+            display: inline-block; /* Ustaw elementy w jednej linii */
+            margin-right: 20px; /* Odstęp pomiędzy elementami */
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="zadanie">
+    <p><B>Zadanie 1.</B> Obliczyć granice podanych ciągów:</p>
+    <ul>
+        <li>a) \( a_n = 3^{- \sqrt{n+1}} + 6 \)</li>
+        <li>b) \( b_n = \frac{2}{1 + n^2 + n^3} \)</li>
+        <li>c) \( c_n = \ln(\ln(n)) \)</li>
+        <li>d) \( d_n = 1 + \sqrt[n]{100} \)</li>
+        <li>e) \( e_n = \frac{-9}{1 + \sqrt{4 - \frac{1}{n}}} \)</li>
+        <li>f) \( u_n = \frac{(-1)^n}{-n} \)</li>
+        <li>g) \( a_n = \left(1 + \frac{1}{6n}\right)^{-3n} \)</li>
+        <li>h) \( b_n = \frac{-5n + 8}{2(1 + 5n)} \)</li>
+        <li>i) \( c_n = \frac{2n^3 - 41n^2 + 2n + 1}{3n^3 + 7n - 2} + \frac{1}{3} \)</li>
+        <li>j) \( d_n = \frac{(-n)^5-2n}{5n^2+17} \)</li>
+        <li>k) \( e_n = \frac{13-n}{\sqrt{9n(n-1) +179}} \)</li>
+        <li>l) \( e_n = \frac{61}{2n + \sqrt{n^2 + 3}} \)</li>
+        <li>m) \( m_n = n^2 - 1024n \)</li>
+        <li>n) \( b_n = \sqrt{n^2 + 2} - \sqrt{n^2 - n} \)</li>
+        <li>o) \( c_n = (n^2 + n)^{\ln(e^n)} \)</li>
+    </ul>
+    <p><B>Odpowiedź:</B> a) 6, b) 0, c) \(\infty\), d) 2, e) -3, f) 0, g) \(e^{-\frac{1}{2}}\), h) \(-\frac{1}{2} \), i) 1, j) -\(\infty\), k) \(-\frac{1}{3} \), l) 0, m) \(\infty \), n) \(\frac{1}{2}\) o) \(\infty \) </p>
+</div>
+
+<div class="zadanie">
+    <p><B>Zadanie 2.</B> Jaki będzie zysk z kapitalizacji odsetek po upływie 2 lat od ulokowania kapitału 10000 PLN na lokacie o oprocentowaniu nominalnym 4% w skali roku i kapitalizacji kwartalnej? Porównać efektywne i nominalne oprocentowanie lokaty w skali roku. Zastanowić się, jak zmiana rocznej liczby kapitalizacji wpłynie na zysk.</p>
+    <p><B>Odpowiedź:</B> Efektywne oprocentowanie = 4.06%, zysk 828,56 zł. </p>
+</div>
+
+<div class="zadanie">
+    <p><B>Zadanie 3.</B> Obliczyć granice:</p>
+    <ul>
+        <li>1) \( \displaystyle \lim_{n \to \infty} \sqrt[n]{10 \cdot 2^n + 2 \cdot 3^n} \)</li>
+        <li>2) \( \displaystyle \lim_{n \to \infty} \frac{2^n}{(n+1)!} \)</li>
+        <li>3) \( \displaystyle \lim_{x \to 0} x^2 \cos \left( \frac{\pi}{x} \right) \)</li>
+        <li>4) \( \displaystyle \lim_{x \to \infty} \frac{x + 2 \cdot (-1)^x}{x} \)</li>
+    </ul>
+
+    <p><B>Wskazówka:</B> Można wykorzystać twierdzenie o granicy trzech ciągów.</p>
+    <p><B>Odpowiedź:</B> 1) 3, 2) 0, 3) 0, 4) 1 </p>
+</div>
+
+<div class="zadanie">
+    <p><B>Zadanie 4.</B> Zbadać ciągłość poniższych funkcji:</p>
+    <ul>
+        <li>\( f(x) = \begin{cases} 
+            x - 3^x, & x \leq 0, \\
+            x^2 + 1, & x > 0 
+        \end{cases} \),</li>
+        <li>\( g(x) = \begin{cases} 
+            \frac{x^2 - \sin(x)}{x}, & x \neq 0, \\
+            -1, & x = 0 
+        \end{cases} \),</li>
+        <li>\( h(x) = \begin{cases} 
+            \lvert \cos(x) \rvert + x, & x \leq 0, \\
+            e^x + 2x^5, & x > 0 
+        \end{cases} \).</li>
+    </ul>
+    <p><B>Odpowiedź:</B> f(x) nie ciągła, g(x) oraz h(x) ciągłe.</p>
+</div>
+
+<div class="zadanie">
+    <p><B>Zadanie 5.</B> Dana jest funkcja ciągła:</p>
+    <ul>
+        <li>\( f(x) = \begin{cases} 
+            \frac{-3 + \sqrt{4 + x}}{x - 5}, & x \neq 5, \\
+            k, & x = 5 
+        \end{cases} \).</li>
+    </ul>
+    <p>Wyznaczyć wartość parametru \( k \).</p>
+    <p><B>Odpowiedź:</B> k=\(\frac{1}{6}\)</p>
+</div>
+
+<a href="../index.html">Strona główna</a>
+
+</body>
+</html>
