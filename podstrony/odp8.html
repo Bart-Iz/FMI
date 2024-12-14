@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Fizyka, Matematyka, Szeregi potęgowe, Zadania domowe">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        B {
+            font-weight: bold;
+        }
+        .zadanie {
+            margin-bottom: 20px;
+        }
+        li {
+            display: inline-block;
+            margin-right: 40px;
+            margin-bottom: 10px;
+            width: 45%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="zadanie">
+    <p><B>Zadanie 1.</B> Obliczyć poniższe całki:</p>
+    <ul>
+        <li>a) \( \int_0^1 (4x^2 + x - 1)dx = \frac{5}{6} \)</li>
+        <li>b) \( \int_0^{1/2} 3^x dx = \frac{\sqrt{3}-1}{\operatorname{ln}(3)} \)</li>
+        <li>c) \( \int_{-1}^0 \frac{2x}{x^2 + 1}dx = -\operatorname{ln}(2) \)</li>
+        <li>d) \( \int_0^{1/2} 6x^2 e^{2x^3} dx = \operatorname{e}^{1/4}-1\)</li>
+        <li>e) \( \int_0^1 x \sqrt[3]{2x + 3} dx = \frac{3}{112}(27\sqrt[3]{3}-5\sqrt[3]{5}) \)</li>
+        <li>f) \( \int_{-1}^1 xe^x dx = \frac{2}{\operatorname{e}}\)</li>
+        <li>g) \( \int_0^2 \frac{e^x}{2 + e^x} dx = \operatorname{ln}(\frac{2+\operatorname{e^2}}{3}) \)</li>
+        <li>h) \( \int_0^{e^2} x \ln(x) dx = \frac{3}{4}\operatorname{e}^4 \)</li>
+        <li>i) \( \int_{-\pi/2}^{0} x^2 \cos(2x) dx = -\frac{&pi;}{4} \)</li>
+        <li>j) \( \int_0^1 \left( \sqrt{x} - \sqrt[3]{x} \right) dx =-\frac{1}{12} \)</li>
+        <li>k) \( \int_0^{+\infty} \frac{1}{2e^x} dx = -\frac{1}{2} \)</li>
+        <li>l) \( \int_0^{\pi/6} \cos(x) \cdot e^{\sin(x)} dx = \sqrt{e}-1 \)</li>
+        <li>m) \( \int_1^e \frac{\ln^2(x)}{-x} dx = -\frac{1}{3} \)</li>
+        <li>n) \( \int_{-\pi/4}^{\pi/2} \cos(x) \cdot \sin^2(x) dx = \frac{4+\sqrt{2}}{12} \)</li>
+        <li>o) \( \int_0^{2\pi} (x - \pi)^2 \cos(x) dx \)</li>
+    </ul>
+</div>
+
+<div class="zadanie">
+    <p><B>Zadanie 2.</B> Obliczyć pole pod wykresem funkcji:</p>
+    <ul>
+        <li>a) \( f(x) = 2\cos(x) \) w przedziale od \( x_1 = -\frac{\pi}{2} \) do \( x_2 = 0 \),</li>
+        <li>b) \( f(x) = \frac{1}{x} \) w przedziale od \( x_1 = 1 \) do \( x_2 = 2 \),</li>
+        <li>c) \( f(x) = \sqrt{4x + 2} \) w przedziale od \( x_0 = 0 \) do \( x_2 = 1 \),</li>
+        <li>d) \( f(x) = 1 + \ln(x) \) w przedziale od \( x_1 = 1 \) do \( x_2 = e \).</li>
+    </ul>
+    <p><B>Odpowiedzi:</B> a) 2, b) ln(2), c) \(\frac{10}{3}\), d) e</p>
+</div>
+
+<div class="zadanie">
+    <p><B>Zadanie 3.</B> Obliczyć pole obszaru ograniczonego krzywymi:</p>
+    <ul>
+        <li>a) \( y = x^2 \) i \( y = 2x \),</li>
+        <li>b) \( y = x^2 - 6x + 5 \) i \( y = 1 - x \),</li>
+        <li>c) \( y = \frac{\sqrt{2}}{2} \) i \( x^2 + y^2 = 4 \),</li>
+        <li>d) \( y = x^e \) i \( y = \sqrt{x} \).</li>
+    </ul>
+    <p><B>Odpowiedzi:</B> a) \(-\frac{4}{3}\), b) 4.5, c) \( 4\operatorname{arctg}(\sqrt{7})-\frac{\sqrt(7)}{2} \), d) \(\frac{2}{3}-\frac{1}{1+e} \) </p>
+</div>
+
+<div class="zadanie">
+    <p><B>Zadanie 4.</B> Przyspieszenie dane jest wzorem \( a = a_0e^{-\omega t} + v_0t \). Znaleźć zależność położenia od czasu, dla warunków początkowych \( v(0) = v_0 \) i \( x(0) = x_0 \).</p>
+    <p><B>Odpowiedzi:</B> \( x(t) = \frac{a_0}{\omega^2}e^{-\omega t} + \frac{v_0t^3}{6} + (\frac{a_0}{\omega}+v_0)t + x_0 + \frac{a_0}{\omega^2} \) </p>
+</div>
+
+<div class="zadanie">
+    <p><B>Zadanie 5.</B> Przyspieszenie ciała wynosi \( 1 \frac{m}{s^2} \). Znaleźć zależność szybkości i położenia tego ciała od czasu, wiedząc, że \( v(0) = 3 \frac{m}{s} \), a \( x(1) = 4m \).</p>
+    <p><B>Odpowiedzi:</B> \( x(t) = \frac{1\frac{m}{s^2}t^2}{2}+3\frac{m}{s}t+\frac{1}{2}m \) </p>
+</div>
+
+<a href="../index.html">Strona główna</a>
+
+</body>
+</html>
